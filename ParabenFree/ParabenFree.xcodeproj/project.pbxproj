@@ -11,15 +11,19 @@
 		818759011E22D191008611A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818759001E22D191008611A3 /* ViewController.swift */; };
 		818759061E22D191008611A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818759051E22D191008611A3 /* Assets.xcassets */; };
 		818759091E22D191008611A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818759071E22D191008611A3 /* LaunchScreen.storyboard */; };
+		C48016ED1908E0EA0E7F66F0 /* Pods_ParabenFree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27078C8DB09F6D505A4F7E2 /* Pods_ParabenFree.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1131896836779F5D0D70FCE8 /* Pods-ParabenFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParabenFree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParabenFree/Pods-ParabenFree.debug.xcconfig"; sourceTree = "<group>"; };
+		63630CDE3E6CEEAB881FAF2F /* Pods-ParabenFree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParabenFree.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParabenFree/Pods-ParabenFree.release.xcconfig"; sourceTree = "<group>"; };
 		818758FB1E22D191008611A3 /* ParabenFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParabenFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818758FE1E22D191008611A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818759001E22D191008611A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		818759051E22D191008611A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		818759081E22D191008611A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8187590A1E22D191008611A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27078C8DB09F6D505A4F7E2 /* Pods_ParabenFree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParabenFree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48016ED1908E0EA0E7F66F0 /* Pods_ParabenFree.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AA297EAC55E1C83F3707202 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F27078C8DB09F6D505A4F7E2 /* Pods_ParabenFree.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		818758F21E22D191008611A3 = {
 			isa = PBXGroup;
 			children = (
 				818758FD1E22D191008611A3 /* ParabenFree */,
 				818758FC1E22D191008611A3 /* Products */,
+				B7375E6A1217FC54BD777888 /* Pods */,
+				3AA297EAC55E1C83F3707202 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +76,15 @@
 			path = ParabenFree;
 			sourceTree = "<group>";
 		};
+		B7375E6A1217FC54BD777888 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1131896836779F5D0D70FCE8 /* Pods-ParabenFree.debug.xcconfig */,
+				63630CDE3E6CEEAB881FAF2F /* Pods-ParabenFree.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8187590D1E22D191008611A3 /* Build configuration list for PBXNativeTarget "ParabenFree" */;
 			buildPhases = (
+				64AA408B465A027519DDC9D2 /* [CP] Check Pods Manifest.lock */,
 				818758F71E22D191008611A3 /* Sources */,
 				818758F81E22D191008611A3 /* Frameworks */,
 				818758F91E22D191008611A3 /* Resources */,
+				C988C5AE96EFA13C8182C1D0 /* [CP] Embed Pods Frameworks */,
+				A85B6FA6566C724A9F9B8559 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +153,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64AA408B465A027519DDC9D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A85B6FA6566C724A9F9B8559 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParabenFree/Pods-ParabenFree-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C988C5AE96EFA13C8182C1D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParabenFree/Pods-ParabenFree-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		818758F71E22D191008611A3 /* Sources */ = {
@@ -246,6 +321,7 @@
 		};
 		8187590E1E22D191008611A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1131896836779F5D0D70FCE8 /* Pods-ParabenFree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParabenFree/Info.plist;
@@ -259,6 +335,7 @@
 		};
 		8187590F1E22D191008611A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63630CDE3E6CEEAB881FAF2F /* Pods-ParabenFree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParabenFree/Info.plist;
