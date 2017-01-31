@@ -7,20 +7,35 @@
 //
 
 import UIKit
+import SnapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        view.backgroundColor = .white
+        setupViewHierarchy()
+        configureConstraints()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - Setup Hierarchy
+    func setupViewHierarchy() {
+        view.addSubview(textField)
     }
-
-
+    
+    // MARK: - Configure Constraints
+    func configureConstraints() {
+        textField.snp.makeConstraints { (make) in
+            make.bottom.leading.trailing.equalToSuperview()
+        }
+    }
+    
+    // MARK: - Lazy Instantiate UI
+    lazy var textField: UITextField = {
+        let field = UITextField()
+        field.borderStyle = .roundedRect
+        field.placeholder = "Say Hello!"
+        return field
+    }()
 }
 
