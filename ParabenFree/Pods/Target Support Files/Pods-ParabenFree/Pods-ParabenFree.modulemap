@@ -1,0 +1,6 @@
+framework module Pods_ParabenFree {
+  umbrella header "Pods-ParabenFree-umbrella.h"
+
+  export *
+  module * { export * }
+}
